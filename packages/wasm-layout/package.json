@@ -1,0 +1,23 @@
+{
+  "name": "@widgetlab/wasm-layout",
+  "version": "0.1.0",
+  "type": "module",
+  "files": [
+    "pkg"
+  ],
+  "exports": {
+    ".": {
+      "types": "./pkg/wasm_layout.d.ts",
+      "import": "./pkg/wasm_layout.js",
+      "default": "./pkg/wasm_layout.js"
+    }
+  },
+  "main": "./pkg/wasm_layout.js",
+  "module": "./pkg/wasm_layout.js",
+  "types": "./pkg/wasm_layout.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "build": "wasm-pack build --release --target bundler",
+    "clean": "rimraf pkg"
+  }
+}

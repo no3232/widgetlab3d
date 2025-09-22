@@ -36,3 +36,7 @@ yarn-error.log*
 # Misc
 .DS_Store
 *.pem
+
+# wasm-layout
+packages/wasm-layout/pkg
+packages/wasm-layout/target
