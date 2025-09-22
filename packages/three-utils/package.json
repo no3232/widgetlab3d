@@ -1,0 +1,31 @@
+{
+  "name": "@widgetlab/three-utils",
+  "version": "0.1.0",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup src/index.ts --dts --format esm --sourcemap --clean",
+    "dev": "tsup src/index.ts --dts --format esm --watch",
+    "clean": "rimraf dist"
+  },
+  "peerDependencies": {
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.1.0",
+    "typescript": "^5.5.4",
+    "@types/three": "^0.180.0",
+    "rimraf": "^6.0.1"
+  }
+}

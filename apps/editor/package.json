@@ -14,7 +14,9 @@
     "react-dom": "19.1.0",
     "three": "^0.180.0",
     "zustand": "^5.0.8",
-    "@widgetlab/wasm-layout": "workspace:*"
+    "@widgetlab/wasm-layout": "workspace:*",
+    "@widgetlab/three-utils": "workspace:*",
+    "@widgetlab/core": "workspace:*"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

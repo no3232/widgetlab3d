@@ -20,5 +20,11 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "pnpm": {
+    "overrides": {
+      "three": "^0.180.0",
+      "@types/three": "^0.180.0"
+    }
+  }
 }
